@@ -23,7 +23,7 @@ function handleServer(req, res) {
         res.write(JSON.stringify(body));
             res.end();
     }else{
-        res.statuCode=404;
+        res.statusCode = 404;
         res.end();
     }
     
